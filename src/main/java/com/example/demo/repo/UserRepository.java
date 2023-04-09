@@ -6,5 +6,4 @@ import com.example.demo.dto.UserDto;
 
 public interface UserRepository extends JpaRepository<UserDto, Integer> {
 
-	
 }

@@ -25,7 +25,7 @@ public class UserService {
 	}
 
 	public UserDto findUserbyId(int id) {
-		return (UserDto) userRepository.findById(id).orElse(null);
+		return userRepository.findById(id).orElse(null);
 	}
 
 	public void deleteById(int id) {
@@ -35,6 +35,10 @@ public class UserService {
 	public List<UserDto> findAllUsers() {
 		return userRepository.findAll();
 	}
+	
+
+	
+
 	
 }
 

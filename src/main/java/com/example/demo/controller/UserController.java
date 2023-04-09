@@ -17,13 +17,12 @@ import com.example.demo.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
-
 @RestController
-@RequestMapping("/users/")
+@RequestMapping("api/v1/users/")
 public class UserController {
 
 	@Autowired
-	private UserService userService; 
+	private UserService userService;
 
 	public UserController(UserService userService) {
 
@@ -55,6 +54,7 @@ public class UserController {
 	public List<UserDto> findAllUsers() {
 		return userService.findAllUsers();
 	}
+
 	
 
 }
