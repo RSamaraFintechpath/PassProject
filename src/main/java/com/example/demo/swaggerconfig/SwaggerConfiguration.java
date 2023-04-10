@@ -24,8 +24,8 @@ public class SwaggerConfiguration {
 
 	@SuppressWarnings("deprecation")
 	private ApiInfo apid2etails() {
-		return new ApiInfo("OpenApi Specification Demo", "This is a demo for OpenApi Specification tools", "1.0", "TOS",
-				"Rami Samara", "licence", "licence URL");
+		return new ApiInfo("Pass Project", "This is a demo project that follow the standards when we writing API's",
+				"1.0.0", "TOS", "Rami Samara", "licence", "licence URL");
 
 	}
 }
