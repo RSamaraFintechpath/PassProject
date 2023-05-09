@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/Test")
 public class TestController {
-    @GetMapping("/usertest")
+    @GetMapping("/userTest/NotCamelCase")
     @ApiParam(value="test", required = true)
     @ApiOperation(value = "test")
-    public void test(){
+    public void Test(){
         //impl
     }
 }
