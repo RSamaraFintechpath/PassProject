@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/Test")
 public class testController {
-    @GetMapping("/userTest")
+    @GetMapping("/usertest")
     @ApiParam(value="test", required = true)
     @ApiOperation(value = "test")
     public void test(){
