@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/Test")
+@RequestMapping("/test")
 public class TestController {
     @GetMapping("/userTest/camelCase")
     @ApiParam(value="test", required = true)
