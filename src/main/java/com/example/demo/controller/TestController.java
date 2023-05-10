@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/test/yay")
 public class TestController {
-    @GetMapping("/userTest/camelCase")
+    @GetMapping("/userTest/camelCase/wow")
     @ApiParam(value="test", required = true)
     @ApiOperation(value = "test")
     public void test(){
