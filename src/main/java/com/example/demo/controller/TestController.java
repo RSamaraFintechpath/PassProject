@@ -12,7 +12,7 @@ public class TestController {
     @GetMapping("/userTest/camelCase")
     @ApiParam(value="test", required = true)
     @ApiOperation(value = "test")
-    public void Test(){
+    public void test(){
         //impl
     }
 }
