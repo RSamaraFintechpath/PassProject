@@ -17,7 +17,7 @@ public class TestController {
         //impl
     }
 
-    @GetMapping("/userTest/queryTest/{Data}")
+    @GetMapping("/userTest/queryTest/{data}")
     @ApiParam(value="test", required = true)
     @ApiOperation(value = "test")
     public String test2(@PathVariable String data){
