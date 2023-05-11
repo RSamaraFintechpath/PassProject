@@ -10,7 +10,6 @@ import javax.persistence.Entity;
 @Entity
 @Data
 @AllArgsConstructor
-@ApiModel("userModel")
 public class User {
     @ApiModelProperty(name="userId", position = 1, example = "42354")
     private int userID;
