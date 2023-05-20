@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test/yay")
+@RequestMapping("/test")
 @SwaggerDefinition(tags = {@Tag(name = "test")})
 @Api(tags = "myTag", value = "@API VALUE")
 public class TestController {
-    @GetMapping("/userTest/camelCase/wow")
+    @GetMapping("/userTest/camelCase")
     @ApiOperation(value = "ApiOperation VALUE")
     public void test(){
         //impl
@@ -25,7 +25,7 @@ public class TestController {
         return data;
     }
 
-    @GetMapping("/Rami")
+    @GetMapping("/getUser")
     @ApiOperation(value = "get user",response = User.class)
     public User getUser(){
         return new User(20006, "Rami Samara", "Amman");
