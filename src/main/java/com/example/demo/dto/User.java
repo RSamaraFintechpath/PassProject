@@ -17,5 +17,6 @@ public class User {
     private int userID;
     @ApiModelProperty(name = "userName", position = 2, example = "Rami Samara")
     private String userName;
+    @ApiModelProperty(name = "userName", position = 2, example = "Rami Samara")
     private String address;
 }

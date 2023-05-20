@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = "myTag", value = "@API VALUE")
 public class TestController {
     @GetMapping("/userTest/camelCase/wow")
-    @ApiParam(value="void method returns nothing", required = true)
     @ApiOperation(value = "ApiOperation VALUE")
     public void test(){
         //impl
@@ -28,7 +27,7 @@ public class TestController {
 
     @GetMapping("/Rami")
     @ApiOperation(value = "get user",response = User.class)
-   public User getUser(){
+    public User getUser(){
         return new User(20006, "Rami Samara", "Amman");
    }
 
