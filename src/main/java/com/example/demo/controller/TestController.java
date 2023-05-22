@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
                 title = "My API",
                 version = "1.0",
                 description = "API for managing products",
-                license = @License(
-                        name = "Apache 2.0",
-                        url = "http://www.apache.org/licenses/LICENSE-2.0.html"
+                contact = @Contact(
+                        name = "John Doe",
+                        email = "johndoe@example.com",
+                        url = "https://example.com"
                 )
         )
 )
